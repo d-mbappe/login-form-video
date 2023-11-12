@@ -1,0 +1,67 @@
+.login-form {
+  max-width: 510px;
+  padding: 40px 60px 50px 60px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: $form-bg;
+  color: $text-color;
+  
+  @media (max-width: 671px) {
+    margin: 0 20px;
+    padding: 25px 40px 35px 40px;
+  }
+
+  &__title {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 52px;
+
+    margin-bottom: 35px;
+  }
+
+  &__body {
+    margin-bottom: 30px;
+  }
+
+  &__divider {
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: rgba(255, 255, 255, 0.2);
+
+      position: relative;
+    }
+
+    &:before {
+      margin-left: -100%;
+      left: -30px;
+    }
+
+    &:after {
+      margin-right: -100%;
+      right: -30px;
+    }
+  }
+
+  &__forgot {
+    color: $text-color;
+    outline: none;
+  }
+}
